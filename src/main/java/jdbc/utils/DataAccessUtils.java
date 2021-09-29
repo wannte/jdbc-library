@@ -1,8 +1,8 @@
 package jdbc.utils;
 
 import java.util.Collection;
-import nextstep.jdbc.exception.EmptyResultDataAccessException;
-import nextstep.jdbc.exception.IncorrectResultSizeDataAccessException;
+import jdbc.exception.EmptyResultDataAccessException;
+import jdbc.exception.IncorrectResultSizeDataAccessException;
 
 public class DataAccessUtils {
     private DataAccessUtils() {
