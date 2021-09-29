@@ -14,3 +14,15 @@ repositories {
 dependencies {
     implementation 'ch.qos.logback:logback-classic:1.2.3'
 }
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'foo'
+            artifactId = 'bar'
+            version = '0.1'
+
+            from components.java
+        }
+    }
+}
