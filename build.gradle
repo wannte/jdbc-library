@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'maven-publish'
 }
 
 group 'org.example'
@@ -8,21 +7,8 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     implementation 'ch.qos.logback:logback-classic:1.2.3'
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            groupId = 'foo'
-            artifactId = 'bar'
-            version = '0.1'
-
-            from components.java
-        }
-    }
 }
